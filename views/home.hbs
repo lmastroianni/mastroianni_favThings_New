@@ -1,0 +1,49 @@
+<section id="section1" class="panel">
+    <div class="bio-info">
+        <h1 class="p-name">Welcome to my Page!</h1>
+        <p>Hey there! My name is Lucas Mastroianni and this page is dedicated to showcasing some of my favourite things! I'd say that these three things are always incorporated into my everyday life, and some of the things that bring me the most joy. Hope you enjoy! </p>
+    </div>
+
+
+{{!-- <section id="section2" class="panel">panel 2</section> --}}
+
+    <h2 class="user-panel-heading">
+        Take a Look!
+    <!--<p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit animi, vero perspiciatis
+        accusantium nisi molestiae, nostrum quisquam unde deleniti, expedita dicta ab quae possimus omnis amet!
+        Modi, nemo autem!Ducimus dolorum aliquid id quae vel sapiente, omnis iste fugiat magni rem
+        exercitationem. Facilis voluptatum praesentium animi rem provident, nam rerum reiciendis perspiciatis
+        optio dolorem magnam temporibus neque quo cum.
+    </p>-->
+
+    <h4>Click on each thing to learn more about it and why I love it so much!</h4>
+
+    <div class="team">
+        <!-- loop through all our team members and put their info on the page -->
+         <!-- this is exactly like a forEach loop with plain JavaScript -->
+        {{#each people}}
+            <div class="user-pannel">
+                <img class="u-avatar" src="images/{{avatar}}" alt="">
+                <a class="u-link" href="{{ID}}">See More Info</a>
+                <h2>{{Name}}</h2>
+                <h3>{{JobTitile}}</h3>
+            </div>
+        {{/each}}
+    </div>
+    </div>
+
+    <!-- this will be filled in on the client side when we render our AJAX data -->
+    <section class="lightbox">
+        <span class="close">x</span>
+        <div class="sidebar">
+            <img src="" alt="larger bio image">
+        </div>
+
+        <div class="lb-content">
+
+        </div>
+    </section>
+</section>
+<!--<section id="section4" class="panel">panel 4</section>-->
+<!--<section id="section5" class="panel"></section> -->
