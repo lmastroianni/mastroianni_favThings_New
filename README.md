@@ -8,7 +8,7 @@ One page responsive app that showcases my 3 favourite things.
 
 Built With
 
-Sass
+- Sass
 - Gulp(NPM)
 - .hbs for templating engine
 - Generated with Express
