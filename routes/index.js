@@ -51,7 +51,7 @@ router.get('/users/:id' , (req,res) => {
             return item;
         })
 
-        //console.log('after split: ', result[0]);
+        console.log('after split: ', result[0]);
 
         // render the home view with dynamic data
 
@@ -60,7 +60,19 @@ router.get('/users/:id' , (req,res) => {
 
        
     })
+
    
+
+
+   
+
+            
+
+
+        
+    
+   
+
 })
 
 module.exports = router;

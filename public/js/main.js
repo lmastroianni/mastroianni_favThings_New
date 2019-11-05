@@ -19,6 +19,9 @@ const myVM = (() => {
             <p>${person.bio}</p>
             <h4>Favourites:</h4>
             ${renderFavourites(person.Favourites)}
+            <p>${person.Link}</p>
+
+            
         `;
 
         console.log(bioContent);
@@ -37,7 +40,7 @@ const myVM = (() => {
         //find the image closest to the anchor tag and get its src property
         let imgSrc = this.previousElementSibling.getAttribute('src');
 
-        let url = `/users/${this.getAttribute('href')}` // will show a 1,2,or 3 - triggers route change so u can do db query
+        let url = `/users/${this.getAttribute('href')}`; // will show a 1,2,or 3 - triggers route change so u can do db query
 
         fetch(url) // go get the data
             .then(res => res.json()) // parse the json result into a plain object
