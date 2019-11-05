@@ -9,7 +9,7 @@ One page responsive app that showcases my 3 favourite things.
 Built With
 
 Sass
--Gulp(NPM)
--.hbs for templating engine
--Generated with Express
--Linked to mySQL database.
+- Gulp(NPM)
+- .hbs for templating engine
+- Generated with Express
+- Linked to mySQL database.
